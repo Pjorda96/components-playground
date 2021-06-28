@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import image from '../../assets/images/car.jpg';
 
-const size = 250;
+const size = 400;
 const translation = 100;
 
 export const Container = styled.div`
