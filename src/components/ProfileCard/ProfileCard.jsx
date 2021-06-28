@@ -4,7 +4,15 @@ import { faArrowRight, faTimes } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin, faTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons'
 
 import Profile from '../../assets/images/profile.jpg';
-import { StyledCard } from "./CardStyles";
+import {
+  StyledCard,
+  Box,
+  ArrContainer,
+  LeftContainer,
+  Skills,
+  Icons,
+  Cancel,
+} from "./CardStyles";
 
 export default function ProfileCard() {
   const [active, setActive] = useState(false);
@@ -15,38 +23,46 @@ export default function ProfileCard() {
 
   return (
     <StyledCard>
-      <div className="box center">
+      <Box>
         <img src={Profile} alt="Profile"/>
         <div>
           <p className="user_name">Pablo Jordá</p>
           <p className="skill">Full-stack developer</p>
         </div>
 
-        <div className={`arr_container center ${active && 'active_arr'}`}  onClick={handleActive}>
-          <FontAwesomeIcon icon={faArrowRight} />
-        </div>
+        <ArrContainer className={`${active && 'active_arr'}`}  onClick={handleActive}>
+          <FontAwesomeIcon icon={faArrowRight} className="icon" />
+        </ArrContainer>
 
-        <div className={`left_container ${active ? 'active' : 'off'}`}>
+        <LeftContainer className={`${active ? 'active' : 'off'}`}>
           <p>Skills</p>
 
-          <div className="skills">
+          <Skills>
             <div>React</div>
             <div>styled-components</div>
             <div>Font Awesome</div>
-          </div>
+          </Skills>
 
-          <div className="icons">
-            <a href="https://github.com/Pjorda96" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
-            <a href="https://github.com/Pjorda96" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a>
-            <a href="http://pjorda.pablojorda.es" target="_blank"><FontAwesomeIcon icon={faTwitter} /></a>
-            <a href="http://pjorda.pablojorda.es/" target="_blank"><FontAwesomeIcon icon={faFacebook} /></a>
-          </div>
+          <Icons>
+            <a href="https://github.com/Pjorda96" target="_blank" rel="noreferrer">
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
+            <a href="https://github.com/Pjorda96" target="_blank" rel="noreferrer">
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+            <a href="http://pjorda.pablojorda.es" target="_blank" rel="noreferrer">
+              <FontAwesomeIcon icon={faTwitter} />
+            </a>
+            <a href="http://pjorda.pablojorda.es/" target="_blank" rel="noreferrer">
+              <FontAwesomeIcon icon={faFacebook} />
+            </a>
+          </Icons>
 
-          <div className="cancel center" onClick={handleActive} >
+          <Cancel className="cancel center" onClick={handleActive} >
             <FontAwesomeIcon icon={faTimes} />
-          </div>
-        </div>
-      </div>
+          </Cancel>
+        </LeftContainer>
+      </Box>
     </StyledCard>
   )
 }
