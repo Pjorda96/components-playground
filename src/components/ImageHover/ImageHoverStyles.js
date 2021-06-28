@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import image from '../../assets/images/car.jpg';
 
+const size = 250;
+const translation = 100;
+
 export const Container = styled.div`
   position: absolute;
   top: 50%;
@@ -11,15 +14,15 @@ export const Container = styled.div`
   
   &:hover {
     .one {
-      transform: translateX(100px);
+      transform: translateX(${translation}px);
     }
     
     .two {
-      transform: translateX(-100px);
+      transform: translateX(-${translation}px);
     }
     
     .text {
-      width: 280px;
+      width: ${size + 30}px;
     }
   }
 `;
@@ -43,20 +46,20 @@ export const Text = styled.div`
 `;
 
 export const Image = styled.div`
-  width: 250px;
-  height: 250px;
+  width: ${size}px;
+  height: ${size}px;
   transition: .3s;
 
   &.one {
     background: url(${image}) center / cover;
     z-index: -1;
-    transform: translateX(125px);
+    transform: translateX(${size / 2}px);
     clip-path: polygon(50% 0, 65% 50%, 50% 100%, 0 100%, 0 50%, 0 0);
   }
 
   &.two {
     background: url(${image}) center / cover;
-    transform: translateX(-125px);
+    transform: translateX(-${size /2}px);
     clip-path: polygon(100% 0, 100% 50%, 100% 100%, 50% 100%, 65% 50%, 50% 0);
   }
 `;
