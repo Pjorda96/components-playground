@@ -1,8 +1,13 @@
 import styled from "styled-components";
 import image from '../../assets/images/car.jpg';
 
-const size = 400;
+const size = 250;
 const translation = 100;
+
+export const WrapperButton = styled.button`
+  display: block;
+  margin: 10px;
+`;
 
 export const Container = styled.div`
   position: absolute;
@@ -10,7 +15,7 @@ export const Container = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
-  display: flex;
+  display: ${props => props.show ? 'flex' : 'none'};
   
   &:hover {
     .one {
