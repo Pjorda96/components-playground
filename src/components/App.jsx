@@ -4,6 +4,7 @@ import ProfileCard from "./ProfileCard";
 import Badge from "./Badge";
 import ImageHover from "./ImageHover";
 import TextBubble from "./TextBubble";
+import OnHover from "./OnHover";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Badge />
       <ImageHover />
       <TextBubble />
+      <OnHover />
     </section>
   );
 }
