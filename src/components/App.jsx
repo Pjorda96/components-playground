@@ -5,6 +5,7 @@ import Badge from "./Badge";
 import ImageHover from "./ImageHover";
 import TextBubble from "./TextBubble";
 import OnHover from "./OnHover";
+import ProductCard from "./ProductCard";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <ImageHover />
       <TextBubble />
       <OnHover />
+      <ProductCard />
     </section>
   );
 }
