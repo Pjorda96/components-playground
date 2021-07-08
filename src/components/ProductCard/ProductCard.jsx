@@ -6,6 +6,7 @@ import {
   Container,
   ProductImg,
   ProductDetail,
+  Title,
   Rating,
   Buttons,
   Price,
@@ -18,7 +19,7 @@ export default function ProductCard() {
       <ProductImg />
 
       <ProductDetail>
-        <span>Canon canonet</span>
+        <Title>Canon canonet</Title>
 
         <Rating>
           <FontAwesomeIcon icon={faStar} aria-hidden />

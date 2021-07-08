@@ -7,11 +7,11 @@ const cartWidth = 160;
 const bookmarkWidth = 40;
 const cartRadius = '50px';
 const bookmarkRadius = '50px';
+const padding = '.8rem';
 
 export const Container = styled.div`
   position: relative;
   width: ${width};
-  height: 420px;
   box-shadow: 0 10px 15px rgba(181, 181, 181, .7);
   background: #f0f0f0;
 `;
@@ -27,22 +27,29 @@ export const ProductDetail = styled.div`
   height: ${height};
   background: #21222d;
   border-radius: 0 40% 0 0;
-  padding: .8rem;
   color: #fff;
   
   p {
     font-size: .8rem;
+    padding: 0 0 0 ${padding};
     color: #5f5f6b
   }
 `;
 
+export const Title = styled.span`
+  margin-top: ${padding};
+  padding: 0 0 0 ${padding};
+`;
+
 export const Rating = styled.div`
   font-size: .7rem;
+  padding: 0 0 0 ${padding};
   color: #fdcc0d;
 `;
 
 export const Buttons = styled.div`
   height: 65px;
+  padding: 0 ${padding};
   display: flex;
   align-items: center;
   justify-content: space-between;
