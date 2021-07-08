@@ -24,7 +24,7 @@ export const ProductImg = styled.div`
 
 export const ProductDetail = styled.div`
   width: ${width};
-  height: ${height};
+  //height: ${height};
   background: #21222d;
   border-radius: 0 40% 0 0;
   color: #fff;
@@ -37,8 +37,7 @@ export const ProductDetail = styled.div`
 `;
 
 export const Title = styled.span`
-  margin-top: ${padding};
-  padding: 0 0 0 ${padding};
+  padding: ${padding} 0 0 ${padding};
 `;
 
 export const Rating = styled.div`
