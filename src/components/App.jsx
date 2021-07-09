@@ -1,5 +1,6 @@
 import React from "react";
 
+import Header from "./Header";
 import ProfileCard from "./ProfileCard";
 import Badge from "./Badge";
 import ImageHover from "./ImageHover";
@@ -9,14 +10,17 @@ import ProductCard from "./ProductCard";
 
 function App() {
   return (
-    <section>
-      <ProfileCard />
-      <Badge />
-      <ImageHover />
-      <TextBubble />
-      <OnHover />
-      <ProductCard />
-    </section>
+    <>
+      <Header />
+      <section>
+        <ProfileCard id="profile-card" />
+        <Badge />
+        <ImageHover />
+        <TextBubble />
+        <OnHover />
+        <ProductCard />
+      </section>
+    </>
   );
 }
 
