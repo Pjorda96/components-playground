@@ -9,6 +9,16 @@ const cartRadius = '50px';
 const bookmarkRadius = '50px';
 const padding = '.8rem';
 
+export const Global = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+  > div {
+    margin-top: 10px;
+  }
+`;
+
 export const Container = styled.div`
   position: relative;
   width: ${width};
@@ -24,7 +34,7 @@ export const ProductImg = styled.div`
 
 export const ProductDetail = styled.div`
   width: ${width};
-  height: ${height};
+  //height: ${height};
   background: #21222d;
   border-radius: 0 40% 0 0;
   color: #fff;
@@ -37,8 +47,7 @@ export const ProductDetail = styled.div`
 `;
 
 export const Title = styled.span`
-  margin-top: ${padding};
-  padding: 0 0 0 ${padding};
+  padding: ${padding} 0 0 ${padding};
 `;
 
 export const Rating = styled.div`
@@ -102,5 +111,77 @@ export const Button = styled.button`
   
   &:hover:before {
     border-color: #fff;
+  }
+`;
+
+// Second Card
+export const ProductCard = styled.div`
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .25);
+`;
+
+export const CardTag = styled.span`
+  background-color: rgba(179, 75, 248, .3);
+  padding: 5px 10px;
+  color: #b34bf8;
+  border-radius: 2px;
+`;
+
+export const CardHeader = styled.div`
+  padding: 20px 30px;
+  text-align: center;
+  
+  img {
+    max-height: 200px;
+    width: auto;
+  }
+`;
+
+export const CardBody = styled.div`
+  
+`;
+
+export const ProductTitle = styled.h4`
+  font-size: 24px;
+  line-height: 1;
+  color: #353535;
+`;
+
+export const ProductStatus = styled.p`
+  color: #808080;
+`;
+
+export const ProductPrice = styled.h3`
+  font-size: 30px;
+  color: #353535;
+  margin: 20px 0;
+`;
+
+export const CardFooter = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const CardButton = styled.button`
+  padding: 10px 40px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  cursor: pointer;
+  
+  &.primary {
+    background-color: #b34bf8;
+    color: #fff;
+  }
+  
+  &.secondary {
+    color: #808080;
+  }
+  
+  &:first-child {
+    margin-right: 15px;
   }
 `;
