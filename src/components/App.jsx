@@ -1,5 +1,3 @@
-import React from "react";
-
 // import Header from "./Header";
 import ProfileCard from "./ProfileCard";
 import Badge from "./Badge";
@@ -9,7 +7,7 @@ import OnHover from "./OnHover";
 import ProductCard from "./ProductCard";
 import OutOfRange from "./OutOfRange";
 
-function App() {
+export default function App() {
   return (
     <>
       {/*<Header />*/}
@@ -25,5 +23,3 @@ function App() {
     </>
   );
 }
-
-export default App;
