@@ -6,6 +6,7 @@ import ImageHover from "./ImageHover";
 import TextBubble from "./TextBubble";
 import OnHover from "./OnHover";
 import ProductCard from "./ProductCard";
+import BurgerButton from "./BurgerButton";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <TextBubble />
       <OnHover />
       <ProductCard />
+      <BurgerButton />
     </section>
   );
 }
