@@ -1,6 +1,6 @@
 import React from "react";
 
-import Header from "./Header";
+// import Header from "./Header";
 import ProfileCard from "./ProfileCard";
 import Badge from "./Badge";
 import ImageHover from "./ImageHover";
@@ -12,7 +12,7 @@ import OutOfRange from "./OutOfRange";
 function App() {
   return (
     <>
-      <Header />
+      {/*<Header />*/}
       <section>
         <ProfileCard id="profile-card" />
         <Badge />
