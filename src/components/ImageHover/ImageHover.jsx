@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {WrapperButton, Container, Text, Image} from "./ImageHoverStyles";
 
 export default function MiddlewareWrapper() {
