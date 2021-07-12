@@ -7,6 +7,7 @@ import ImageHover from "./ImageHover";
 import TextBubble from "./TextBubble";
 import OnHover from "./OnHover";
 import ProductCard from "./ProductCard";
+import OutOfRange from "./OutOfRange";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <TextBubble />
         <OnHover />
         <ProductCard />
+        <OutOfRange />
       </section>
     </>
   );
