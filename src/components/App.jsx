@@ -6,6 +6,7 @@ import TextBubble from "./TextBubble";
 import OnHover from "./OnHover";
 import ProductCard from "./ProductCard";
 import OutOfRange from "./OutOfRange";
+import BurgerButton from "./BurgerButton";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         <OnHover />
         <ProductCard />
         <OutOfRange />
+        <BurgerButton />
       </section>
     </>
   );
