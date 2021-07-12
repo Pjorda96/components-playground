@@ -1,4 +1,3 @@
-import React from "react";
 import { TextBubble as TextBubbleStyled } from './TextBubbleStyles';
 
 export default function TextBubble() {
