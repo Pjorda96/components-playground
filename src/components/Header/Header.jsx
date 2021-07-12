@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode, faHamburger } from '@fortawesome/free-solid-svg-icons'
 import {
   Header as StyledHeader, LogoLink, NavToggle, SmallLogo,
-  Hamburguer, Nav, Logo, NavList, NavItem, NavLink,
+  Nav, Logo, NavList, NavItem, NavLink,
 } from './HeaderStyles';
 
 export default function Header() {
