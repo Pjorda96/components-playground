@@ -7,6 +7,7 @@ import OnHover from "./OnHover";
 import ProductCard from "./ProductCard";
 import OutOfRange from "./OutOfRange";
 import BurgerButton from "./BurgerButton";
+import Checkbox from "./Checkbox";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
         <ProductCard />
         <OutOfRange />
         <BurgerButton />
+        <Checkbox />
       </section>
     </>
   );
