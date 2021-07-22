@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
 const width = 100;
-const before = width * .32;
+const height = width * .4;
+const before = height - 8;
 
 export const Checkbox = styled.input`
   -webkit-appearance: none;
   appearance: none;
   position: relative;
   width: ${width}px;
-  height: ${width * .4}px;
+  height: ${height}px;
   border: .2rem solid #d9d9d9;
   outline: none;
   border-radius: ${width * .3}px;
