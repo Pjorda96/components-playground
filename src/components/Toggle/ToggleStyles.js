@@ -4,7 +4,7 @@ const width = 100;
 const height = width * .4;
 const before = height - 8;
 
-export const Checkbox = styled.input`
+export const Toggle = styled.input`
   -webkit-appearance: none;
   appearance: none;
   position: relative;
