@@ -10,7 +10,8 @@ import Navbar from "../components/Navbar";
 import Cards from './Cards';
 import Buttons from "./Buttons";
 import Forms from "./Forms";
-import Other from "./Other/Other";
+import Login from "./Login";
+import Other from "./Other";
 
 export default function App() {
   return (
@@ -21,6 +22,9 @@ export default function App() {
         <Navbar />
 
         <Switch>
+          <Route exact path="/">
+            <Cards />
+          </Route>
           <Route path="/cards">
             <Cards />
           </Route>
@@ -30,11 +34,11 @@ export default function App() {
           <Route path="/forms">
             <Forms />
           </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
           <Route path="/other">
             <Other />
-          </Route>
-          <Route path="/">
-            <Cards />
           </Route>
         </Switch>
       </div>

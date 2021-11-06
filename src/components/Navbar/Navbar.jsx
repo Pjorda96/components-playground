@@ -17,6 +17,9 @@ export default function Navbar() {
           <Link to="/forms">Forms</Link>
         </li>
         <li>
+          <Link to="/login">Login</Link>
+        </li>
+        <li>
           <Link to="/other">Other</Link>
         </li>
       </ul>
